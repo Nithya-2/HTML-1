@@ -1,0 +1,191 @@
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../Image/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    color: white;
+    }
+    header a{
+        text-decoration: none;
+        color: yellow;
+        min-width: 120px;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1em;
+        padding: 1em;
+    }
+    #logo{
+        flex: 3;
+        font-size: 1.25em;
+        min-width: 420px;
+    }
+    nav{
+        flex: 2;
+        display: flex;
+        align-items: center;
+    }
+    nav a{
+        flex: 1;
+    }
+    nav a:hover{
+        color:aqua;
+    }
+    header h2 i,nav a i{
+        margin-right: .5em; 
+    }
+    .maintext{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+        justify-content: center;
+        padding: 2em;
+        min-width: 750px;
+    }
+    .line1{
+        color:wheat;
+        font-size: 2.5em;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    .line2{
+        color: yellow;
+    }
+    .maintext div{
+        margin-top: .7em;
+    }
+    .maintext button{
+        width: 20vw;
+        margin-top: 2em;
+        border-radius: 10px;
+        padding: .7em;
+        background-color: green;
+        color: white;
+        border: 1px solid green; 
+        min-width: fit-content; 
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+        background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+        color: white;
+    }
+    #menuheading,#locheading{
+        background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+        font-size: 2.5em;
+        color:blanchedalmond;
+        display: flex;
+        justify-content: center;
+    }
+    .menu th{
+        color: greenyellow;
+        font-size: 1.5em;
+    }
+    
+     table{
+        width:100%;
+        padding:1em;
+    }
+    .menu tr{
+        display:flex;
+        justify-content: center;
+        margin-top:.8em;
+    }
+    .menu td:nth-child(1){
+        flex: 1;
+        justify-self: left;
+    }
+    .menu td:nth-child(2){
+        justify-self: right;
+    }
+    .maincourse{
+        grid-row:span 2;
+    }
+    .locations{
+        background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+        color:white;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .locations h2{
+        color:greenyellow;
+        margin-bottom: .8em;
+    }
+    .locations div{
+        flex:1;
+        padding:1em;
+        min-width:170px;
+    }
+    footer{
+        background-color: rosybrown;
+        color:white;
+        padding:.25em 1em;
+    }    
+    
+    #copyright{
+        margin-left:20px;
+    }
+
+    @media (max-width: 767px) {
+        .line1{
+            width: 86%;
+        }
+        .landing {
+            height: 120vh;
+        }
+    }
+    @media (max-width: 568px) {
+        .line1{
+            width: 60%;
+        }
+        .landing {
+            height: 125vh;
+        }
+    }
+    @media (max-width: 494px) {
+        .line1{
+            width: 50%;
+        }
+        .landing {
+            height: 130vh;
+        }
+    }
+    @media (max-width: 397px) {
+        .landing {
+            height: 140vh;
+        }
+        .line1{
+            width: 40%;
+        }
+        .line2{
+            width: 30%;
+        }
+    }
+    @media (max-width: 313px) {
+        .landing {
+            height: 150vh;
+        }
+        .line1{
+            width: 30%;
+        }
+        .line2{
+            width: 20%;
+        }
+        
+        
+    }
+    @media (max-width: 250px) {
+        .landing {
+            height: 150vh;
+        }
+        .line1{
+            width: 10%;
+        }
+        
+        
+    }
