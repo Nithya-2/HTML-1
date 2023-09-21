@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Check Prime Number</h2>
+<p>Enter the Number:</p>
+<input type="number" id="number">
+<button type="button" onclick="getValue()">Try it</button>
+<p id="demo"></p>
+
+<script>
+   
+    function getValue(){
+        let n = document.getElementById("number").value;
+        document.getElementById("demo").innerHTML=setValue(n);
+    }
+    function isPrime(n) {
+        let b=0;
+        for(let i=2; i < n ; i++) {
+        if(n % i === 0) {
+        b=1;
+        break;
+        }
+        }
+        return b;
+    }
+    function setValue(k){
+        let j=0, arr=[];
+        for(let i=1; i<=k; i++){
+            
+           if(isPrime(i) === 0){
+               arr[j] = i;
+               j++;
+           }
+        }
+        return arr;
+    }
+    
+</script>
+<p></p>
+
+</body>
+</html>
