@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   
+<head >
+    <title>
+        Style backgroundColor Property
+    </title>
+    
+</head>
+   
+<body style="text-align:center">
+    <style>
+        body{
+            width: 320px;
+            
+            margin:auto;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+    <div id="test">
+    <h1 style="color:blueviolet;">Playing With Color</h1>
+    <h2>Color Box</h2>
+    <button type="button" onclick="changeColor('rosybrown')">rosybrown</button> <br>
+    <button type="button" onclick="changeColor('lightgrey')">lightgrey</button> <br>
+    <button type="button" onclick="changeColor('lightblue')">light blue</button> <br>
+    </div>
+  
+      <script>
+        function changeColor(value) {
+            document.getElementById('test').style.backgroundColor = value;
+            // document.body.style.backgroundColor =value;
+        }
+        
+    </script>
+</body>
+</html>
