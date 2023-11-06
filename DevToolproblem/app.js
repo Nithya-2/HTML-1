@@ -1,6 +1,8 @@
     const progressContainer = document.getElementById('progress-container');
     const addButton = document.getElementById('addButton');
-      
+
+    const resume = document.getElementById("resume");
+    const pause = document.getElementById("pause");
     let progressBarList = [];
     let loading = false;
 
@@ -10,7 +12,7 @@
         loadProgressBar();
       }
     });
-  
+
     function addProgressBar() {
       const progressBarContainer = document.createElement('div');
       progressBarContainer.className = 'progress-bar-container';
@@ -25,16 +27,23 @@
       if (progressBarList.length < progressBarContainers.length) {
         const progressBarContainer = progressBarContainers[progressBarList.length];
         loading = true;
-  
+
         requestAnimationFrame(() => {
           progressBarContainer.querySelector('.progress-bar').style.display = "block";
         });
-  
-        setTimeout(() => {
-          progressBarList.push(progressBarContainer);
-          loading = false;
-          loadProgressBar();
-        }, 3000);
+
+        resume.addEventListener('click', () => {
+          progressBarContainer.querySelector('.progress-bar').style.animationPlayState = 'running';
+        })
+        pause.addEventListener('click', () => {
+          progressBarContainer.querySelector('.progress-bar').style.animationPlayState = 'paused';
+        })
+    
+        progressBarContainer.querySelector('.progress-bar').addEventListener("animationend",()=>{
+            progressBarList.push(progressBarContainer);
+            loading = false;
+            loadProgressBar();
+        })
       }
     }
 
