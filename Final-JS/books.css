@@ -1,0 +1,75 @@
+/* * {
+    box-sizing: border-box;
+  }
+   */
+.book {
+  flex-direction: row;
+  border: 2px black solid;
+  border-radius: 3px;
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  width: 80%;
+  text-align: center;
+}
+
+.card {
+  /* display: grid;
+    grid-template-columns: repeat(1, 1fr);  */
+  background-color: azure;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  float: left;
+
+}
+
+.dir {
+  margin: 2px;
+}
+
+.picture {
+  border: 3px solid white;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 600;
+  font-style: italic;
+  word-break: break-all;
+  margin: 10px;
+
+  .author-name {
+    font-weight: 100;
+    font-style: normal;
+  }
+}
+
+.book-details {
+  width: 378px;
+}
+
+.progress {
+  height: 20px;
+  width: 300px;
+  margin-top: 45px;
+}
+
+.out{
+  text-align: right;
+  margin-top: 10px;
+}

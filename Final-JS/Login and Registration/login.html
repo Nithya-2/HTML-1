@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0">
+	<title>Login and Registration</title>
+	<link rel="stylesheet" href="login.css">
+	<a href=""></a>
+</head>
+
+<body>
+	<header>
+		<h3 class="title">Login & Registration Form</h3>
+	</header>
+	<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+
+
+	<!-- container div -->
+	<div class="container">
+
+		<!-- upper button section to select
+			the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		<!-- Form section that contains the
+			login and the signup form -->
+		<div class="form-section">
+
+			<!-- login form -->
+			<div class="login-box">
+				<input id="login-email" type="email" class="email ele" placeholder="youremail@email.com">
+				<input id="login-password" type="password" class="password ele" placeholder="password">
+				<button id="login" class="clkbtn">Login</button>
+			</div>
+
+			<!-- signup form -->
+			<div class="signup-box">
+				<input id="signup-email" type="email" class="email ele" placeholder="youremail@email.com">
+				<input id="signup-password" type="password" class="password ele" placeholder="password">
+				<button id="signup" class="clkbtn">Signup</button>
+			</div>
+		</div>
+	</div>
+	<script src="login.js"></script>
+</body>
+</html>
